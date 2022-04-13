@@ -1,0 +1,184 @@
+.mainNavigation {
+    position: inherit;
+	width: 100%;
+	height: 4em;  
+    padding: .5em 3% .5em 3%;
+    background: #f1f1f1;
+}
+.mainNavigation .title a{
+    text-decoration: none;
+    color: #555;
+}
+main{
+    background: #ffffff;
+    width: 100%;
+    
+}
+
+.main-header{
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    width: 70%;
+    margin: 1em  auto;
+    background: #f1f1f1;
+    padding: 1em;
+}
+.main-header h2{
+    margin-left: 1em;
+    float: left;
+    
+}
+.main-header p{
+    margin-left: 1em;
+    padding: 1em 0;
+    font-size: 15px;
+}
+.main-header button{
+    display: block;
+    margin-left: auto;
+    margin-right: 1.5em;
+    margin-bottom: .5em;
+}
+
+.items-container{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    width: 70%;
+    margin: 0 auto;
+    background: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    margin-bottom: 20vh;
+    min-height: 50vh;
+}
+
+.item{
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+}
+.item-info{
+    flex: 2;
+    padding: .2em;
+    display: flex;
+}
+.item-img{
+    width: 150px;  
+}
+.item-img img{
+    width: 100%;
+}
+.info-text{
+    padding: .5em;
+    width: 50%;
+    flex-direction: column;
+}
+.item-checkout{
+    padding: .5em;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+.item-checkout button{
+    margin-top: 1em;
+    margin-left: auto;
+}
+
+#sumPrice{
+    text-align: right;
+    margin-right: 1em;
+    margin-left: 0;
+    float: none;
+}
+
+input[type=radio]{
+    margin: .2em;  
+}
+
+.login-container{
+    display: none;
+}
+
+.register-container{
+    display: none;
+}
+
+
+@media screen and (max-width: 900px) {
+    .main-header{
+        width: 85%;
+
+    }
+    .items-container{
+        width: 85%;
+    }
+    .mainNavigation {
+        position: relative;
+        padding: 0;
+        height: auto;
+        z-index: 0;
+    }
+
+
+    
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .mainNavigation {
+        position: relative;
+        padding: 0;
+        height: auto;
+        z-index: 0;
+    }
+
+
+    .main-header{
+        margin: 2em 0;
+        width: 100%;
+    }
+    .main-header h2{
+        margin: 0;
+    }
+    .main-header p{
+        margin: 0;
+        text-align: center;
+    }
+    .main-header button{
+        margin: auto;
+        margin-bottom: .5em;
+        width: 70%;
+        min-width: 110px;
+    }
+    .items-container{
+        width: 100%;
+        margin:0 0 2em 0;
+    }
+    .item{
+        flex-direction: column;
+        padding: 0;  
+    }
+    .item-info{
+        flex-direction: column;
+        text-align: center;
+    }
+    .info-text{
+        margin:auto;
+        padding: 0;
+    }
+    .item-img{
+        width: 80%;
+        margin: auto;  
+    }
+    .info-text{
+        width: 100%;
+    }
+    .item-checkout{
+        text-align: center;
+        width: 100%;
+    }
+    .item-checkout button{
+        width: 100%;
+    }
+}

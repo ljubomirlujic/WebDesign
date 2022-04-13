@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/styleCart.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Cart</title>
+</head>
+<body>
+    <nav class="mainNavigation" id="nav">
+        <div class="logoContainer">
+            <a href="index.html"><img src="slike/logo.jpg"></a>
+        </div>
+        <div class="title">
+            <a href="index.html"><h1>Cloud Library</h1></a>
+        </div>
+        <div class="BtnNavigation">
+            <a href="shoppingCart.html"><img src="slike/logoBasket.png"></a>
+            <ul>
+                <ul>
+                    <li><button class="loginBtn" name="loginBtn" id="loginBTN">Login</button></li>
+                    <li><button class="registerBtn" name="registerBtn" id="registerBTN">Register</button></li>
+                    <h4 id="log-info"></h4>
+                </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="main-header">
+            <h2>Your basket</h2>
+            <img src="slike/logoBasket.png">
+            <p>Shopping basket details</p>
+            <h2 id="sumPrice">3232</h2>
+            <button class="blueButton" name="checkout">Checkout</button>
+            <hr>
+            <p>In placing your order, you are confirming that you have read and agree to our Terms and Conditions.</p>
+        </div>
+     <div class="items-container" id="items-container">
+        <!-- <div class="item">
+            <div class="item-info">
+                <div class="item-img">
+                    <img src="slike/jsBook.jpg">
+                </div>
+                <div class="info-text">
+                    <h3>JavaScript funkcionalno programiranje</h3>
+                    <p>Federico Kereki</p>
+                    <hr>
+                    <form>
+                    <input type="radio" id="one" name="rate" value="one">
+                    <input type="radio" id="two" name="rate" value="two">
+                    <input type="radio" id="three" name="rate" value="three">
+                    <input type="radio" id="four" name="rate" value="four">
+                    <input type="radio" id="five" name="rate" value="five">
+                    </form>
+                    <p>5/5</p>
+                    <h2>2000</h2>
+                    <p>rsd</p>
+                </div>
+            </div>
+            <div class="item-checkout">
+                <h2>10.50$</h2>
+                <button class="removeButton" name="removeBtn">remove</button>
+            </div>
+            
+        </div>
+        <hr> -->
+        
+        
+        
+     </div>
+    </main>
+    <footer>
+        <a href="#nav" class="fa fa-angle-double-up" id="go-btn"></a>
+        <h3>Cloud Library 2020 ©</h3>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-google"></a>
+    </footer>
+    <div class="login-container" id ="login-container">
+        <form class="form-login" id="login-form" action="[]" method="">
+            <img src="slike/loginImg.png">
+            <h2>Login Form</h2>
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" id="uname">
+        
+            <label for="password"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="password" id="pass">
+
+            <button class="loginBtn" type="submit" id="login">Login</button>  
+            <button class="registerBtn" id="register-btn" type="button">Register</button>
+        </form>
+    </div> 
+
+    <div class="register-container">
+        <form class="form-register" action="" method="">
+            <h2>Register Form</h2>
+            <ul>
+                <li class="registerForm-row">
+                    <label for="uname"><b>Name: </b></label>
+                    <input type="text" placeholder="Enter name" name="name">
+                </li>
+                <li class="registerForm-row">
+                    <label for="uname"><b>Surname:</b></label>
+                    <input type="text" placeholder="Enter surname" name="surname">
+                </li>
+                <li class="registerForm-row">
+                    <label for="uname"><b>Email:</b></label>
+                    <input type="text" placeholder="Enter email" name="email">
+                </li>
+                <li class="registerForm-row">
+                    <label for="uname"><b>Username:</b></label>
+                    <input type="text" placeholder="Enter username" name="username">
+                </li>
+                <li class="registerForm-row">
+                    <label for="uname"><b>Password:</b></label>
+                    <input type="password" placeholder="Enter password" name="username">
+                </li>
+                <li class="registerForm-row">
+                    <label for="uname"><b>Date of birth:</b></label>
+                    <input type="date"  name="date">
+                </li>
+                <li class="registerForm-row">
+                    <label for="uname"><b>Phone number:</b></label>
+                    <input type="text" placeholder="Enter phone number" name="number">
+                </li>
+                <li class="registerForm-row">
+                    <label for="uname"><b>Adress:</b></label>
+                    <input type="text" placeholder="Enter adress" name="adress">
+                </li>
+            </ul>
+            <button class="registerBtn" id="register-btn" type="submit">Register</button> 
+            <button class="loginBtn" id="login-btn">Login</button>   
+        </form>
+    </div> 
+</body>
+<script src="js/login.js"></script>
+<script src="js/cart.js"></script>
+</html>

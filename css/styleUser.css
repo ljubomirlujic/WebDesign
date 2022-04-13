@@ -1,0 +1,110 @@
+.mainNavigation {
+    position: inherit;
+	width: 100%;
+	height: 4em;  
+    padding: .5em 3% .5em 3%;
+    background: #f1f1f1;
+}
+.mainNavigation .title a{
+    text-decoration: none;
+    color: #555;
+}
+main{
+    width: 100%;
+    
+}
+.container{
+    padding: 2em;
+    border: 1em solid #f1f1f1;
+    width: 60%;
+    background: #e2e2e2;
+    margin: 12vh auto;
+}
+
+.userImg img{
+    border: 1.5em solid #f1f1f1;
+    border-radius: 50%;
+    display: block;
+    margin: 2em auto;
+    width: 250px;
+}
+.container ul{
+   padding: 1em;
+}
+.info-row p{
+    padding: .2em .5em 0 0;
+}
+.info-row {
+    border-radius: 5px;
+    display: block;
+    background-color: #cecece;
+    max-width: 450px;
+    display: flex;
+    padding: .5em;
+    margin: .2em auto;
+    white-space: nowrap;
+}
+#first{
+    font-weight: bold;
+}
+.buttons {
+    text-align: center;
+}
+
+.login-container{
+    display: none;
+}
+
+.register-container{
+    display: none;
+}
+
+@media screen and (max-width: 900px) and (min-width: 600px) {
+    .mainNavigation {
+        position: relative;
+        padding: 0;
+        height: auto;
+        z-index: 0;
+    }
+    .container{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .mainNavigation {
+        position: relative;
+        padding: 0;
+        height: auto;
+        z-index: 0;
+    }
+    .info-row{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+    }
+    .container{
+        padding: 0;
+        width: 90%;
+    }
+    .container ul{
+        padding: 1%;
+    }
+    .userImg{
+        width: 100%;
+    }
+    .userImg img{
+        border: none;
+        width: 50%;
+    }
+    .buttons{
+        margin: .5em auto;
+    }
+    #first{
+        white-space: pre-wrap;
+    }
+    #second{
+        white-space: pre-wrap;
+    }
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Home</title>
+</head>
+<body>
+    <nav class="mainNavigation" id="nav">
+        <div class="logoContainer">
+           <a href="index.html"><img src="slike/logo.jpg"></a>
+        </div>
+        <div class="title">
+            <h1>Cloud Library</h1>
+            
+        </div>
+        
+        
+        <div class="BtnNavigation">
+           
+            <a href="shoppingCart.html"><img src="slike/logoBasket.png"></a>
+            <ul>
+                <ul>
+                    <button class="blueButton" name="loginBtn" id="users">Korisnici</button>
+                    <li><button class="loginBtn" name="loginBtn" id="loginBTN">Login</button></li>
+                    <li><button class="registerBtn" name="registerBtn" id="registerBTN">Register</button></li>
+                    <h4 id="log-info"></h4>
+                    
+            </ul>
+        </div>
+    </nav>
+    </div>
+    <section class="intro" id="intro">
+        <h1>Welcome to our library</h1>
+        <button onclick="document.location='#books-container'">View books</button>
+        <img src="slike/introPicture.jpg" alt="booksPicture">    
+    </section>
+    <section class="books-container" id="books-container">
+        <!-- <div class="book">
+            <a href="book.html"><img src="slike/jsBook.jpg" alt="JavaScript"></a>
+            <div class="book-right">
+                <div class="book-header">
+                    <h3>JavaScript </h3>
+                    <p>Federico Kereki</p>
+                </div>
+                <hr>
+                <div class="book-main">
+                    <div class="radio-rate">
+                        <form>
+                        <input type="radio" id="one" name="rate" value="one">
+                        <input type="radio" id="two" name="rate" value="two">
+                        <input type="radio" id="three" name="rate" value="three">
+                        <input type="radio" id="four" name="rate" value="four">
+                        <input type="radio" id="five" name="rate" value="five">
+                        </form>
+                        <p>5/5</p>
+                    </div>
+                    <div class="price">
+                        <h2>2000</h2>
+                    <p>rsd</p>
+                    </div>
+                    <div class="bookBtn-container">
+                        <button class="blackButton" name="readMoreBtn"> Add to wishlist</button>
+                        <button class="blueButton" name="addCartBtn">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        </div>
+    </section>
+    <footer>
+        <a href="#intro" class="fa fa-angle-double-up" id="go-btn"></a>
+        <h3>Cloud Library 2020 ©</h3>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-google"></a>
+    </footer>
+    <div class="login-container" id ="login-container">
+        <form class="form-login" id="login-form" action="[]" method="">
+            <img src="slike/loginImg.png">
+            <h2>Login Form</h2>
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" id="uname">
+        
+            <label for="password"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="password" id="pass">
+
+            <button class="loginBtn" type="submit" id="login">Login</button>  
+            <button class="registerBtn" id="register-btn" type="button">Register</button>
+        </form>
+    </div> 
+
+    <div class="register-container" id="register-container">
+        <form class="form-register" id="form-register" action="" method="">
+            <h2>Register Form</h2>
+            <ul>
+                <li class="registerForm-row">
+                    <label for="name"><b>Name: </b></label>
+                    <input type="text" placeholder="Enter name" name="name" id="name">
+                </li>
+                <li class="registerForm-row">
+                    <label for="surname"><b>Surname:</b></label>
+                    <input type="text" placeholder="Enter surname" name="surname" id="surname">
+                </li>
+                <li class="registerForm-row">
+                    <label for="email"><b>Email:</b></label>
+                    <input type="text" placeholder="Enter email" name="email" id="email">
+                </li>
+                <li class="registerForm-row">
+                    <label for="username"><b>Username:</b></label>
+                    <input type="text" placeholder="Enter username" name="username" id="username">
+                </li>
+                <li class="registerForm-row">
+                    <label for="password"><b>Password:</b></label>
+                    <input type="password" placeholder="Enter password" name="password" id="password">
+                </li>
+                <li class="registerForm-row">
+                    <label for="date"><b>Date of birth:</b></label>
+                    <input type="date"  name="date" id="date">
+                </li>
+                <li class="registerForm-row">
+                    <label for="number"><b>Phone number:</b></label>
+                    <input type="text" placeholder="Enter phone number" name="number" id="number">
+                </li>
+                <li class="registerForm-row">
+                    <label for="adress"><b>Adress:</b></label>
+                    <input type="text" placeholder="Enter adress" name="adress" id="adress">
+                </li>
+            </ul>
+            <button class="registerBtn" id="register-btn" type="submit">Register</button> 
+            <button class="loginBtn" id="login-btn" type="button">Login</button>   
+        </form>
+    </div> 
+</body>
+<script src="js/books.js"></script>
+<script src="js/login.js"></script>
+<script src="js/register.js"></script>
+</html>
